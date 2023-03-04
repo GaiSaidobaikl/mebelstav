@@ -1,0 +1,789 @@
+body{
+    width: 1519px;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a{
+    Color:black;
+}
+
+/*Шапка сайта*/
+.content{
+    background-image: url(imgs/interior-3.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: 100% 100%;
+    margin: 0;
+}
+.in-content{
+    position:relative;
+    padding: 35px  69px;
+    height: max-content;
+}
+/**/
+.inn{
+    display: none;
+}
+
+
+
+
+
+/*Основной блок меню*/
+.div{
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    transform: scaleY(0);
+    transition: 1.4s all;
+    height: max-content;
+   /* background-color:  rgba(0, 0, 0, 0.6);*/
+    background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(134, 74, 5, 0.8));
+    border-radius: 0 0  0 5rem ;
+    backdrop-filter: blur(6px);
+}
+/*сам текст куда нажимаешь что меню вышло*/
+.label{
+    float:left;
+    top: 2rem;
+    position: absolute;
+    transition: 2s all;
+    cursor: pointer;
+    z-index: 1;
+    right: 10rem;
+}
+.label img{
+    box-shadow: 3px 3px 3px;
+    border-radius: 80%;
+}
+/*при нажимании на текст, меня выходит*/
+#divv:checked ~ .div{
+    width: 20rem;
+    transform: scale(1);
+  
+}
+
+#divv:checked ~ .label{
+    right: 0rem;
+}
+
+
+.sot-seti{
+    display: block;
+    margin-left: 6rem;
+    padding-bottom: 2rem;
+    width: max-content;
+
+}
+
+
+/*ссылки внутри меню*/
+.content-check{
+    
+    margin-top: 10rem;
+    width: max-content;
+    padding: 0rem 4rem;
+    text-align: center;
+    transition: 2s all;
+   
+}
+.content-check a{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    width: 10rem;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: white;
+    /*border-bottom: 1px solid rgb(149, 149, 149);*/
+    transition: 0.4s all;
+
+}
+
+
+        /*Навигация шапки*/
+.nav{
+    width: 10%;
+    display: flex;
+}
+.content-check a:hover{
+    background-color: rgb(193, 123, 32);
+    border-radius: 0 6px 0 6px;
+    transform: scale(1.2);
+}
+.content-check a:active{
+    transform: translateY(-8px);
+}
+
+/*текст внутри изображения*/
+.in-text{
+    color: white;
+    position: relative;
+    bottom: -6rem;
+    left: 3rem;
+    width: 412px;
+}
+.h1{
+    font-size: 58px;
+    margin-bottom: 25px;
+}
+.h4{
+    background:linear-gradient(rgb(156, 163, 193), rgb(187, 78, 78));
+    width: 220px;
+    padding: 16px;
+    border-radius: 0 5px 0 5px;
+    margin-bottom: 25px;
+}
+.text{
+    background-color: rgba(32, 35, 40, 0.7);
+    padding: 17px;
+    border-radius: 0 13px 0 13px;
+    line-height: 1.5;
+    font-family: helvetica;
+}
+
+
+/*Второй контент*/
+.two-content{
+    background-color: #171A1A;
+    width: 100%;
+    height: 250px;
+    /*padding:  21px 85px;*/
+    color:  #6F7A8B;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hh1{
+    width:265px;
+    border-bottom: 1px solid white;
+    font-size: 28px;
+    padding-bottom: 1rem;
+}
+.in-two{
+    width:50%;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+        /*Фирмы*/
+.firms p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+.firms{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+        /*Адресс-*/
+.in-adres{
+    text-align: right;
+   padding: 1rem 2rem;
+    flex-wrap: wrap;
+    float: right;
+    width: 40%;
+}
+.adres-text{
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.nomer{
+    color: white;
+    font-size: 25px;
+}
+        /*Кнопка*/
+.btn{
+    padding: 12px 30px;
+    background:linear-gradient(blue, rgb(43, 122, 213));
+    color:white;
+    width:250px ;
+    border-radius: 0 10px 0 10px;
+}
+
+
+
+/*Третий контент*/
+.three-content{
+    width: 100%;
+    height: 700px;
+    background-color: #FAFAFA;
+    flex-wrap: wrap;
+}
+
+.one-black{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: #202328;
+}
+.good-work{
+    position: relative;
+    margin: 60px auto;
+    width: 1000px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.good-text{
+    position: relative;
+    color: #a19f9f;
+    width: 50%;
+    border-right: 2px solid grey;
+    line-height: 1.7;
+    padding-right: 50px;
+    font-size: 14px;
+    text-align: right;
+}
+.good{
+    width: 400px;
+    float: right;
+    padding-left: 55px;
+    word-break: break-all;
+}
+.good h2{
+    color:orangered
+}
+.good p{
+    color:white;
+    font-weight: bold;
+    font-size: 26px;
+}
+                /*Блок по центру*/
+
+.center-img{
+    position:absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15rem;
+    display: flex;
+    
+}
+            /*Карточка изображения*/
+
+.img1{
+    background-color: #E4E6E8;
+    border-bottom: 2px solid gray;
+    width: 25%;
+    box-shadow: 2px 3px 10px ;
+}
+.img1 img{
+    transition: 1s all;
+}
+.img1 img:hover{
+    transform: scale(1.1);
+}
+            /*Текст внутри карточки*/
+
+.map{
+    font-size: 14px;
+    font-weight: 10;
+}
+.diw p{
+    font-size: 19px;
+    color:rgb(35, 35, 35);
+    font-weight: 500;
+    padding-right: 7px;
+}
+.diw{
+    position: relative;
+    max-width: 100%;
+    margin-top:20px;
+    padding-left: 20px;
+}
+                /*Кнопка*/
+.but{
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 42%;
+}
+button{
+    border: none;
+}
+.but .btn{
+    font-size: 14px;
+    box-shadow: 2px 0px 8px rgb(21, 21, 21);
+
+    background: linear-gradient(rgb(182, 104, 27),rgb(131, 131, 133));
+}
+.btn {
+    transition: 0.3s all;
+}
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 3px 10px rgb(21, 21, 21);
+
+}
+.btn:active {
+    transform: translateY(-5px);
+    transform: scale(0.9);
+}
+
+
+
+
+/*Четвертый контент*/
+.four-content{
+    position: relative;
+    width: 80%;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+                /*4- IMG внутри контейнера*/
+.four-img{
+    width:470px;
+    height: 100% ;
+}
+                /*4 -Текст внутри коробки*/
+.text-four{
+    width: 540px;
+    height: max-content;
+    flex-wrap: wrap;
+}
+
+
+.four-text h2{
+    font-size: 16px;
+    color: rgb(150, 65, 4);
+}
+p{
+    line-height: 1.5;
+}
+            /*4-Маленькие блоки с текстом и иконкой*/
+.four-div{
+    position: absolute;
+    width: 265px;
+    height: 264px;
+    background-color: rgb(255, 255, 255);
+}
+.four-in{
+    position: relative;
+    font-size:17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+                /*Вторая маленькая коробка*/
+                /*Использован 2 класс одного блока*/
+.e{
+    position: relative;
+    float: right;
+}
+
+/*Пятый контент*/
+.five-content{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background-color: #202328;
+    background-image: url(/bg-image.png);
+    background-size: 100% 100%;
+    color: white;
+}
+                    /*Загаловок*/
+.hhh2{
+    padding-top: 20px;
+    font-size: 29px;
+}
+                    /*Внутренний общий блок*/
+.five-in{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+                    /*Текст отступ сверху*/
+.five-in p{
+    margin-top: 25px;
+}
+                    /*Карточки команий*/
+.partner{
+    position: relative;
+    width: 270px;
+    text-align: center;
+}
+
+
+/**/
+
+.six-content{
+    position: relative;
+    margin: 80px 80px;
+    width: 90%;
+    height: max-content;
+    
+}
+.six-zag{
+    text-align: center;
+}
+.six-img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.six-card{
+    width:330px;
+    height: max-content;
+    border: 1px solid gray ;
+    background-color: rgb(247, 247, 247);
+    padding: 9px;
+    margin-bottom: 1rem;
+}
+.six-card img{
+    width: 100%;
+    height: 230px;
+}
+.i7{
+    
+    opacity: 0.3;
+}
+.pp{
+    width: 100%;
+    height: 450px;
+}
+.pp p{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 15%;
+    font-size:18px;
+}
+.pp a{
+    display: inline;
+    position: absolute;
+    z-index: 200000;
+    text-decoration: none;
+    color: #6F7A8B;
+    margin-left: 2%;
+    margin-top: 15%;
+    font-size:18px;
+}
+.six{
+    width: 330px;
+}
+.six img{
+    width: 100%;
+    height: 450px;
+}
+
+.six-text{
+    border-left: 2px solid orangered;
+    padding-left: 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/**/
+
+.seven-content{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-color: #171A1A;
+}
+.seven-in{
+    width: 90%;
+    position: absolute;
+    margin:75px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro-seven{
+    width: 350px;
+}
+.sev-img{
+    margin-bottom: 20px ;
+}
+.korotko{
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.mi a{
+    color:#FFFFFF;
+    opacity: 0.7;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.mi a:hover{
+    color: rgb(191, 127, 0);
+    opacity: 1;
+}
+.marginr{
+    margin-right: 30px;
+}
+.seven-content p{
+    color:#FFFFFF;
+    opacity: 0.7;
+}
+.menu{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    width: 30px;
+    border-bottom: 4px solid orangered;
+    padding-bottom: 10px;
+    
+}
+.nets{
+    width: 190px;
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        max-width: 100%;
+    }
+    body{
+        max-width: 100%;
+        }
+        /**/
+
+.div{
+    z-index: 9;
+}
+.label{
+    z-index: 10;
+    right: 4rem;
+}
+.one-black{
+    display: block;
+    padding-bottom: 4rem;
+}
+
+.in-text{
+    position: relative;
+    left: 0;
+}
+   .link-nav{
+    display: block;
+   }
+   .in-text{
+    margin: 0;
+   }
+   .in-text .h4{
+        position: relative;
+   }
+   .in-text .h1{
+        position: relative;
+   }
+   /*Второй контент*/
+
+   .two-content{
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 3rem;
+    display: inline-block;
+    height: auto;
+}
+.hh1{
+    position: relative;
+    width:260px;
+    border-bottom: 1px solid white;
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.in-two{
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+    transform: translateX(-2rem);
+    border-bottom: 2px solid rgb(75, 75, 75);
+}
+        /*Фирмы*/
+.firms p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+.firms{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+        /*Адресс-*/
+.in-adres{
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 70%;
+    transform: translateX(-2rem)
+}
+.adres-text{
+    position: relative;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.nomer{
+    position: relative;
+
+    color: white;
+    font-size: 25px;
+}
+        /*Кнопка*/
+.btn{
+    position: relative;
+    padding: 12px 30px;
+    background:linear-gradient(blue, rgb(43, 122, 213));
+    color:white;
+    width:250px ;
+    border-radius: 0 10px 0 10px;
+}
+.but{
+    width: max-content;
+    display: block;
+    position: relative;
+    margin: 3rem auto;
+    padding: 0;
+}
+
+   
+    /*Третий контент*/
+   .three-content{
+    width: 100%;
+    height: max-content;
+   position: relative;
+    flex-wrap: wrap;
+}
+
+.one-black{
+    position: relative;
+    width: 100%;
+}
+.good-work{
+    position: absolute;
+    display: block;
+    margin-top: 0px;
+    padding: 0;
+}
+.good-text{
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    color: #a19f9f;
+    margin-top: 2rem;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 2px solid rgb(207, 118, 15);
+    border-top: 2px solid rgb(207, 118, 15);;
+    line-height: 1.7;
+    font-size: 14px;
+    text-align: center;
+}
+.good{
+    position: absolute;
+    width: auto;
+    width: 76%;
+}
+
+/**/
+.center-img{
+    display: block;
+    position: relative;
+}
+.img1{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 2px 3px 10px ;
+}
+.four-text p{
+    margin-bottom: 2rem;
+}
+.four-text{
+    padding: 10px;
+}
+.text-four p{
+    font-size: 14px;
+}
+.text-four{
+    height: auto;
+}
+
+.four-content{
+    position: relative;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    margin: 150px auto 100px;
+    width: 100%;
+}
+.four-img{
+    position: relative;
+    width: 100%;
+}
+.four-div{
+    width: 43%;
+    padding: 10px;
+    height: max-content;
+}
+.partner{
+    width: 20%;
+    font-size: 10px;
+    color:#a19f9f;
+}
+.hhh2{
+    margin-left: 10%;
+    height: max-content;
+    text-align: center;
+    margin: 0;
+}
+.five-content{
+    position: relative;
+    height: max-content;
+}
+.six-content{
+    height: max-content;
+    width: 100%;
+    margin: 0 auto;
+}
+.six-img{
+    display: block;
+    margin: 0 auto;
+}
+.six-card{
+    box-shadow: 2px 3px 10px;
+    margin: 0  auto 2rem;
+}
+.seven-content{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    
+}
+.seven-content p{
+    font-size: 14px;
+}
+.seven-in{
+    display: block;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+
+
+.content{
+    background-image: url(imgs/interior-3.jpg);
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    margin: 0;
+    
+}
+}
