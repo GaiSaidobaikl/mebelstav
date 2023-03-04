@@ -557,7 +557,7 @@ p{
 }
 .label{
     z-index: 10;
-    right: 4rem;
+    right: 2.5rem;
 }
 .one-black{
     display: block;
@@ -566,7 +566,12 @@ p{
 
 .in-text{
     position: relative;
-    left: 0;
+    left: 1rem;
+    top: 2rem;
+}
+.text{
+    position: absolute;
+    max-width: 80%;
 }
    .link-nav{
     display: block;
@@ -614,8 +619,9 @@ p{
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
+    margin-left: 1rem;
 }
         /*Адресс-*/
 .in-adres{
@@ -781,9 +787,12 @@ p{
 .content{
     background-image: url(imgs/interior-3.jpg);
     width: 100%;
-    height: 650px;
+    height: 500px;
     background-size: 100% 100%;
     margin: 0;
-    
+}
+.logo{
+    position: relative;
+    left: -3rem;
 }
 }
